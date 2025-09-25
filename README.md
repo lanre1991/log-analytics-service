@@ -30,8 +30,7 @@ This is exactly what was done for the task:
 
 * macOS/Linux shell
 * Python **3.10+**
-* AWS CLI v2 configured for the interview account with permissions to **List/Get** from the bucket
-* Do **not** commit any credentials
+* AWS CLI v2 configured for the account with permissions to **List/Get** from the bucket
 
 ---
 
@@ -68,8 +67,9 @@ aws configure --profile (name given)
 
 ## 4) Bucket previously created
 
- used existing bucket that already contains `.jsonl` logs at the root:
+Used existing bucket that already contains `.jsonl` logs at the root:
 
+```bash
 Bucket:
 BUCKET=devops-assignment-logs-18-08
 ```
@@ -83,6 +83,7 @@ Analyse a **local** file:
 ```bash
 source .venv/bin/activate
 python cli.py --file sample.log --threshold 3
+
 ```
 
 Analyse the **latest** object from **S3** (by `LastModified`):
@@ -175,7 +176,7 @@ Returns:
 
 ---
 
-## 10) What’s next (Part 2 – infra)
+## 9) What’s next (Part 2 – infra)
 
 Part 2 will add Docker, Terraform (ECS Fargate + ALB + CloudFront), and CI/CD. Those files will live under:
 
