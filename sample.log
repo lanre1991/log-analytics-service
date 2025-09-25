@@ -1,0 +1,5 @@
+{"timestamp":"2025-09-15T14:00:00Z","service":"api","level":"ERROR","msg":"Internal server error","endpoint":"/checkout"}
+{"timestamp":"2025-09-15T14:00:01Z","service":"orders","level":"INFO","msg":"Order received"}
+{"timestamp":"2025-09-15T14:00:02Z","service":"billing","level":"ERROR","msg":"Foreign key constraint failed"}
+{"timestamp":"2025-09-15T14:00:03Z","service":"api","level":"INFO","msg":"Health check OK"}
+{"timestamp":"2025-09-15T14:00:04Z","service":"api","level":"ERROR","msg":"Database timeout"}
