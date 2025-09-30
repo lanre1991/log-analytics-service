@@ -119,6 +119,9 @@ flask run -p 8081
 
 **Terminal B** — call endpoints:
 
+export BUCKET=devops-assignment-logs-18-08
+
+
 ```bash
 # health
 curl "http://127.0.0.1:8081/health"
